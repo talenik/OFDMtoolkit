@@ -8,10 +8,8 @@
 
 <H2>How to install</H2>
 
-1. Download this toolkit.
-2. Download the YALDPC toolkit from here: <a href=https://github.com/talenik/YALDPC> YALDPC </a>
-3. Copy contnets of the YALDPC/lib subdir in ./lib subdir here. No files should be overwritten.
+1. Just download and open in MATLAB.
 
 <H2>To run from MATLAB</H2>
 
-just run the simOFDM.m
+Run the simOFDM.m
