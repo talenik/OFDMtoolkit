@@ -12,8 +12,9 @@ function [ RX, vN, NOISE ] = AWGNChan( TX, SNR, mod, cod )
 %	vN	- variance of the zero mean AWGN == noise power (linear scale)
 %	N	- actual AWNG noise samples
 
-%testing for unit average input signal power
-checkPower( TX, 1, 1e-2 ) ;
+
+%if signal is previously filtered in fading channel, this must no be true:
+%checkPower( TX, 1, 1e-2 ) ;
 
 if isreal( TX )
 	%real valued AWGN to be used only with BPSK
@@ -37,6 +38,7 @@ else
 	NOISE		= RX - TX ;
 end
 
-checkPower( NOISE, vN, 1e-2 ) ;
+%if signal is previously filtered in fading channel, this must no be true:
+%checkPower( NOISE, vN, 1e-2 ) ;
 
 

@@ -1,33 +1,11 @@
 format compact ;
 path( "." + filesep + "lib", path ) ;
-cl ;
-
-%Tested OK for:
-%	all forms BPSK, QPSK
-%	QAM M = 4, 16
-%Known bugs:
-%	differential encoding with QAM - potentially incompatible symbol-bit mapping
-%TODO:
-%	rayleigh channel - quasi static
-%		signal space - FDE perfect CSI in RX , zero forcing EQ
-%		signal space - FDE estimated CSI in RX, MMSE EQ 
-%		pulse shaping test - matrix frame
-%		pulse shaping sim - vector frame with IBI
-%		SS jammer - pilot jamming
-%		SS jammer - AWGN jamming
-%		SS jammer - CP attack
-
-%Notes:
-%qammod - cannot do differential encoding, but no biggie
-%qamdemod can do fixed point, integer output, also soft output
-%comm.PSKModulator & comm.PSKDemodulator, comm.QPSKModulator & comm.QPSKDemodulator to be replaced by pskmod and pskdemod
-
 
 %% start of settings ------------------------------------------------------
 
-
 path( '../', path )	;	%path for secret email config
 path( 'lib', path ) ;
+cl ;
 
 % simulation parameters
 
